@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahara Solar Energy - L'énergie solaire du futur</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f6fff7;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #28a745, #0e7a26);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    header p {
+      font-size: 1.2em;
+      z-index: 2;
+      position: relative;
+    }
+
+    /* Effet solaire animé */
+    .sun {
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(255, 255, 0, 0.8), rgba(255, 165, 0, 0.3));
+      border-radius: 50%;
+      animation: rise 10s infinite ease-in-out alternate;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    @keyframes rise {
+      0% { top: 120px; opacity: 0.4; }
+      100% { top: -60px; opacity: 1; }
+    }
+
+    nav {
+      background-color: #0e7a26;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .section {
+      background-color: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 900px;
+    }
+
+    h2 {
+      color: #0e7a26;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 270px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #1c692c;
+    }
+
+    /* Formulaire de contact */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 20px auto 0;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border: 1px solid #28a745;
+      box-shadow: 0 0 5px #a5d6a7;
+    }
+
+    footer {
+      background-color: #0e7a26;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 700px) {
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="sun"></div>
+    <h1>Sahara Solar Energy</h1>
+    <p>Ensemble, faisons briller le Maroc avec une énergie propre et durable ☀️</p>
+  </header>
+
+  <nav>
+    <a href="#projet">Notre mission</a>
+    <a href="#ecologie">Pourquoi le solaire</a>
+    <a href="#galerie">Nos installations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <div class="section" id="projet">
+      <h2>Notre mission</h2>
+      <p>
+        Sahara Solar Energy est une entreprise marocaine basée à Dakhla, 
+        spécialisée dans l’installation et la maintenance de systèmes photovoltaïques.  
+        Nous accompagnons particuliers, entreprises et collectivités pour transformer le soleil du Sahara 
+        en énergie propre et rentable.
+      </p>
+      <button class="button" onclick="alert('Merci pour votre confiance 🌞 ! Un conseiller vous contactera sous peu.')">
+        Demander une étude gratuite
+      </button>
+    </div>
+
+    <div class="section" id="ecologie">
+      <h2>Pourquoi choisir le solaire ?</h2>
+      <p>
+        🌿 Réduisez vos factures d’électricité<br>
+        ☀️ Profitez d’une ressource naturelle illimitée<br>
+        🇲🇦 Soutenez la transition énergétique du Maroc<br>
+        🔧 Bénéficiez d’une maintenance locale et rapide<br>
+        💡 Investissez dans l’avenir, pas dans la pollution.
+      </p>
+    </div>
+
+    <div class="section" id="galerie">
+      <h2>Nos installations</h2>
+      <p>Découvrez quelques exemples de nos réalisations et projets solaires dans le Sud marocain :</p>
+      <div class="gallery">
+        <img src="https://c8.alamy.com/compfr/wr9tgg/panneau-solaire-a-ksar-el-khorbat-oujdid-maroc-wr9tgg.jpg" alt="Panneaux solaires Ksar El Khorbat, Maroc">
+        <img src="https://var.maclem.fr/public/img/big/AdobeStock295764592bisjpg_5e144ad65e737.jpg" alt="Panneaux photovoltaïques">
+        <img src="https://sunenergy.ma/wp-content/uploads/2024/07/panneaux-solaires-maroc-guide-840x620-840x620.jpg" alt="Ferme solaire au Maroc">
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contactez-nous</h2>
+      <p>📍 Dakhla, Sahara marocain<br>
+         📞 +212 6 00 00 00 00<br>
+         ✉️ contact@saharasolar.ma</p>
+
+      <form onsubmit="envoyerMessage(event)">
+        <input type="text" id="nom" placeholder="Votre nom" required>
+        <input type="email" id="email" placeholder="Votre email" required>
+        <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+        <button type="submit" class="button">Envoyer le message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sahara Solar Energy – Ensemble, éclairons le futur</p>
+  </footer>
+
+  <script>
+    function envoyerMessage(e) {
+      e.preventDefault();
+      const nom = document.getElementById("nom").value;
+      const email = document.getElementById("email").value;
+      const msg = document.getElementById("message").value;
+
+      if (nom && email && msg) {
+        alert(`Merci ${nom} 🌞 ! Votre message a été envoyé avec succès. Nous vous répondrons bientôt.`);
+        document.querySelector("form").reset();
+      } else {
+        alert("Veuillez remplir tous les champs avant d’envoyer le message.");
+      }
+    }
+  </script>
+</body>
+</html>
